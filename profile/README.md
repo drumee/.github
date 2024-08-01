@@ -1,5 +1,7 @@
 ## What is Drumee
 Drumee is a stand-alone collaborative system with all the main functionalities integrated into a single environment, offering same user experience than on a PC.
+![Drumee Desktop](https://github.com/drumee/.github/blob/main/profile/images/desktop.png)
+[Checkout demo here](https://sandbox.drumee.io)
 
 ## Why?
 - If you don't want to pay for cloud collaborative softwares
@@ -18,6 +20,7 @@ Drumee breakdown is a set of three main components
 - File system Management (fine grain privilege control)
 - Pure client-side rendering engine (pure JSON based)
 ![Drumee Rendering Engine](https://github.com/drumee/.github/blob/main/profile/images/letc.png)
+
 ## Principles
 ### Access control
 Who are you and what do you want? Restful micro-service endpoint. Each service is assigned a required privilege (permission). The requested service shall be only executed if the user's privilege matchs the service permission requirement.
