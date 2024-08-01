@@ -1,4 +1,3 @@
-# @drumee/documentation
 ## What is Drumee
 Drumee is a stand-alone collaborative system with all the main functionalities integrated into a single environment, offering same user experience than on a PC.
 
