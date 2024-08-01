@@ -1,7 +1,10 @@
 ## What is Drumee
 Drumee is a stand-alone collaborative system with all the main functionalities integrated into a single environment, offering same user experience than on a PC.
 ![Drumee Desktop](https://github.com/drumee/.github/blob/main/profile/images/desktop.png)
-[Checkout demo here](https://sandbox.drumee.io)
+### Checkout demo
+No registration, no traking, no add, no 💩 washing
+[https://sandbox.drumee.io](https://sandbox.drumee.io)
+[Visite our Website](https://drumee.org)
 
 ## Why?
 - If you don't want to pay for cloud collaborative softwares
