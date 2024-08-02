@@ -50,17 +50,8 @@ HTML makes user interface development easier, faster, portable, flexible and so 
 * writing HTML code inside backend code. On my opinion, this approach ruins readability of code. A bad readability is the beginning of much ore messes. 
 That's why Drumee runs its own User Interface Renderer called LETC, for Limitlessly Extensible Traversal Collection. [Discover LETC](https://drumee.com/-/#/sandbox)
 
-## Get started
-While Drumee User Interface, the client-side, can run on any moderne Web Browser, Drumee Server supports only Linux architecture, at the present time. 
-
-### If you want only to use Drumee as a standalone collaborative system
-#### Install using Docker compose file 
-The easiest way to use Drumee is to follow [the installation documentation here](https://github.com/drumee/docker-compose)
-#### Install using Debian Packages 
-If you prefere to install on a Bare Metal Server or Virtual Machine, please [head to this manual](https://github.com/drumee/docker-compose)
-
-#### Install using NPM
-
+## Documentation
+### [Get started](https://github.com/drumee/documentation/?tab=readme-ov-file#get-started)
 ### Develop a Drumee plugin 
 #### server-side plugin
 #### client-side plugin
