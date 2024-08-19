@@ -52,6 +52,10 @@ That's why Drumee runs its own User Interface Renderer called LETC, for Limitles
 
 ## Documentation
 ### [Get started](https://github.com/drumee/documentation/?tab=readme-ov-file#get-started)
+
+## Wiki pages
+### [Service Router](https://github.com/drumee/service-router/wiki)
+### [Server Core](https://github.com/drumee/server-core/wiki)
 ### Develop a Drumee plugin 
 #### server-side plugin
 #### client-side plugin
