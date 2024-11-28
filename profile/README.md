@@ -38,7 +38,9 @@ Drumee breakdown is a set of three main components
 
 ## Principles
 ### Access control
-Who are you and what do you want? Restful micro-service endpoint. Each service is assigned a required privilege (permission). The requested service shall be only executed if the user's privilege matchs the service permission requirement.
+Who are you and what do you want? Restful micro-service endpoint. Each service is assigned a required privilege (permission). The requested service shall be only executed if the user's privilege matchs the service permission requirement. 
+
+[Here is the ACL rules for accessing Drumee files](https://github.com/drumee/services-router/blob/main/acl/media.json)
 
 ### File system Management
 Unlike standard applications, Drumee doesn't rely on host file system management. In such a case, the whole host file system is directly exposed to threats that may passed through the application. MFS, for Meta File System Drumee, is an API set that makes file system handling much safer, easier, more flexible, scalable and powerful. 
