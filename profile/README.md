@@ -1,5 +1,5 @@
 ## What is Drumee
-Drumee is a stand-alone collaborative system with a wide range of functionalities integrated into a single and seamless environment. 
+Drumee is a standalone collaborative system with a wide range of features integrated into a single, seamless environment.
 
 Unlike many open source projects, Drumee's user interface has been carefully crafted to bring the user experience to a level as comfortable as on a PC. Beyond the coll UX, Drumee is also a full stack framework that natively handles identity management, filesystem management and fully client-side rendering.
 
