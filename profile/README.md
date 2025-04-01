@@ -281,7 +281,9 @@ So far, from the frontend request **this.postService("perdrix.site_create",…)*
   }
 ```
 
-Yes, that simple! [Watch out the result!](https://github.com/drumee/.github/blob/main/profile/images/perdrix.png)
+Yes, that simple! 
+
+![Create-New-Site](https://github.com/drumee/.github/blob/main/profile/images/perdrix.png)
 
 All you need is to get data from the **input** component (provided by Drumee Kernel) passed it to a stored procedure through a Drumee DB API **await_proc**, with the first argument being the procedure name and the remaining being arguments expected by the procedure.
 
