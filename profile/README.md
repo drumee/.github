@@ -7,11 +7,11 @@ Drumee has been built to end this era of Wild Web Workaround. Open source with t
 ## The Problem: Reinventing the Wheel with Every new Project
 
 Modern web development is fragmented and inefficient. Teams waste months:
-    - Evaluating frameworks (React vs. Vue, Express vs. Django)
-    - Rebuilding auth/file systems with inconsistent security
-    - Handling rendering trade-offs (SSR vs. CSR performance pitfalls)
-    - Setup infrastructure (SSL certificates, HTTP server configuration)
-    - Setup database engine (application password, permission, security)
+  - Evaluating frameworks (React vs. Vue, Express vs. Django)
+  - Rebuilding auth/file systems with inconsistent security
+  - Handling rendering trade-offs (SSR vs. CSR performance pitfalls)
+  - Setup infrastructure (SSL certificates, HTTP server configuration)
+  - Setup database engine (application password, permission, security)
 
 ## The Solution: Drumee OS – A Comprehensive Web Development Environment
 
