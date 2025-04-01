@@ -15,7 +15,7 @@ Modern web development is fragmented and inefficient. Teams waste months:
 
 ## The Solution: Drumee OS – A Comprehensive Web Development Environment
 
-Drumee provides four integrated pillars that work like an OS:
+Drumee provides three integrated pillars that work like an OS:
 1. Identity & Access Control (Built-In)
     - Automatic user-ID tagging for all requests
     - Role-based permissions enforced at micro service level
@@ -33,7 +33,7 @@ Drumee provides four integrated pillars that work like an OS:
 
 ## The Ecosystem
 
-Drumee Ecosystem is built upon two pilars
+Drumee Ecosystem is built upon two assets
 
   - Unified SDK :
       - Prebuilt, resable and extensible widgets (drag-drop UI)
@@ -63,28 +63,36 @@ Unlike standard applications, Drumee doesn't rely on host file system management
 ![MFS principle](https://github.com/drumee/.github/blob/main/profile/images/mfs.png)
 
 ## User Interface Rendering Engine 
-HTML makes user interface development easier, faster, portable, flexible and so on. But by design, HTML is a server-side language. How can we write user interface codes, which is a client-side program, with a language designed to run on a server? Well, we use frameworks that elevate some level of abstraction. But we always end up with :
+HTML makes user interface development easier, faster, portable, flexible and so on. But by design, HTML is a server-side language. How can we write user interface codes, which is a client-side program, with a language designed to run on a server? 
+
+Well, we use frameworks that elevate some level of abstraction. But we always end up with :
+
 * client-side codes are somehow generated/executed/processed by server, this means we have to add more server resources to do a job that may be done by the client. Furthermore, running a client code inside the server code may induce some risk of security beach.
+  
 * writing HTML code inside backend code. On my opinion, this approach ruins readability of code. A bad readability is the beginning of much ore messes. 
 That's why Drumee runs its own User Interface Renderer called LETC, for Limitlessly Extensible Traversal Collection. [Discover LETC](https://drumee.com/-/#/sandbox)
 
 # How does it work
 ## Plug and play 
-Drumee comes as a bundle (Docker image or Debian packages) with all servers required by modern Web Application (http server, database server, domain server, SSL certificate, WebSocket layer, video conferencing, etc.). With a handful of parameters, the bundle will install and automatically configure the whole infrastructure.
-There no more time wasted for the same setup, the same trade-offs, etc.
+Drumee comes as a bundle (Docker image or Debian packages) with all servers required by modern Web Application (http server, database server, domain name server, SSL certificate, WebSocket layer, video conferencing, etc.). 
+
+With a handful of parameters, the bundle will install and automatically configure the whole infrastructure. No more time wasted for the same setup, the same trade-offs, etc.
 
 ## Fullstack SDK 
 Drumee has been designed by security and for flexibility. It works like an Operating System. Drumee SDK provides extensibility on frontend and backend. Developers can focus on the functionalities that create value for their application.
-Below example is a simple ERP designed to handle works ordered by customers over several constructions site. Obviously, permission on each action must be properly implemented. And we will see later how it is easy to do such a thing. 
+
+Below example is a simple ERP, Entreprise Resources Planner. Obviously, in a such application, permission on each action must be properly implemented. And we will see later how it is easy to do such a thing. 
 
 ## The frontend
-Everything is widget, builtins widgets or custom widgets. All of then come to live within a JSON tree. 
+Everything is widget, builtins widgets or custom widgets. All of them come to live within a JSON tree. 
 
 - The first step is to numerate widgets you need in addition to the ones that already exist in Drumee SDK.
 
 - Your widgets are mainly an assembly of already existing widgets from Drumee SDK. 
 
-Below example is a sample of a real-life application, which is a small ERP for a small business dealing with several customers ordering several works on several construction site. Check the repository here for full implentation.
+This example is a sample of a real-life application, which is a small ERP for a small business dealing with several customers ordering several works on several construction site. Check the repository here for full implentation.
+[Frontend](https://github.com/somanos/perdrix-ui)
+[Backend](https://github.com/somanos/perdrix-server)
 
 ```
 export {
@@ -103,16 +111,16 @@ export {
 ```
 
 ### A Frontend Widget
-Let focused on the idget **work_form**. [Check full implentation here.](https://github.com/somanos/perdrix-ui/blob/main/src/manager/widget/form/work/index.js)
+Let focused on the widget **work_form**. [Check full implentation here.](https://github.com/somanos/perdrix-ui/blob/main/src/manager/widget/form/work/index.js)
 
-
-  **promptSite**(cmd) {
+```
+  promptSite(cmd) {
     this.loadWidget({
-      kind: '**site_form**',
+      kind: 'site_form',
       source: this,
       id: `site-form-${this.mget('custId')}`,
-      uiHandler: [this],
-      **service**: "site-created"
+      uiHandler**: [this],
+      service: "site-created"
     })
     this.ensurePart("entries-manual").then((p) => {
       p.el.dataset.state = 0;
@@ -124,15 +132,16 @@ Let focused on the idget **work_form**. [Check full implentation here.](https://
   }
 
   onUiEvent(cmd, args = {}) {
-    let **service** = args.service || cmd.mget(_a.service);
-    switch (**service**) {
+    let service = args.service || cmd.mget(_a.service);
+    switch (service) {
 …
           case "add-site":
-            this.**promptSite**(cmd);
+            this.promptSite(cmd);
             break;
         }
-
+    ...
   }
+```
 
 #### The skeleton concept
 Instead of using template with HTML/CSS elements, Drumee use pure JSON tree data to describe the User Interface. Below block is an example of Drumee Skeleton. 
@@ -206,6 +215,10 @@ In this example, the service "**add-site**" shall load another widget (movable w
     })
   }
 ```
+#### The parts handler.
+One of another developers headache is accessing within a DOM tree. Using *document.getElement* returns only DOM element, not the whole widget with all data, APIs and states. 
+
+That why, Drumee introduced the **part concept**, This consists of naming a sub-widget by a name that can be used to retrieve the sub-widget within the parent widget. Part namespace is scoped. That means that part names are unique within the same parent specified by partHandler. This avoid conflicts between widgets using same part name. 
 
 #### The REST API
 In the above example, there is a method named **postService**. The first argument is the *micro service name*, remaining ones are data. One sngle is enough to post or fetch any service.
