@@ -73,7 +73,7 @@ That's why Drumee runs its own User Interface Renderer called LETC, for Limitles
 Drumee comes as a bundle (Docker image or Debian packages) with all servers required by modern Web Application (http server, database server, domain server, SSL certificate, WebSocket layer, video conferencing, etc.). With a handful of parameters, the bundle will install and automatically configure the whole infrastructure.
 There no more time wasted for the same setup, the same trade-offs, etc.
 
-## Fullstack DSK 
+## Fullstack SDK 
 Drumee has been designed by security and for flexibility. It works like an Operating System. Drumee SDK provides extensibility on frontend and backend. Developers can focus on the functionalities that create value for their application.
 Below example is a simple ERP designed to handle works ordered by customers over several constructions site. Obviously, permission on each action must be properly implemented. And we will see later how it is easy to do such a thing. 
 
