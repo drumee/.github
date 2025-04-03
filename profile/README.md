@@ -111,7 +111,7 @@ export {
 ```
 
 ### A Frontend Widget
-Let focused on the widget **work_form**. [Check full implentation here.](https://github.com/somanos/perdrix-ui/blob/main/src/manager/widget/form/work/index.js)
+Let focused on the widget **work_form**. [Check full implentation here.](https://github.com/somanos/perdrix-ui/tree/main/src/manager/widget/work/form)
 
 ```
   promptSite(cmd) {
@@ -152,7 +152,7 @@ As the application UI start rendering, the JSON tree is parse to find every node
 
 So, each widget comes to live with its own skeleton, which a tree of other widgets, and so on. Being simple JSON data, the Skeleton can change at will. That's the magics!
 
-The function from the widget **this.feed(require('./skeleton')(this))** will load below structure into the User Interface Widget. [Check full implentation here.](https://github.com/somanos/perdrix-ui/blob/main/src/manager/widget/form/work/skeleton/index.js)
+The function from the widget **this.feed(require('./skeleton')(this))** will load below structure into the User Interface Widget. [Check full implentation here.](https://github.com/somanos/perdrix-ui/blob/main/src/manager/widget/work/form/skeleton/index.js)
 
 ```
 Skeletons.Box.Y({
