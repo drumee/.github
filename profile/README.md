@@ -19,7 +19,7 @@ Drumee provides three integrated pillars that work like an OS:
 1. Identity & Access Control (Built-In)
     - Automatic user-ID tagging for all requests
     - Role-based permissions enforced at micro service level
-    - Etensible and flexibe rules
+    - Extensible and flexibe rules
   
 2. Secure Filesystem (Linux-Inspired)
     - Isolated volumes with POSIX-style permissions
