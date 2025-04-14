@@ -281,7 +281,7 @@ The service name is made of two parts separated by a dot. The first part is the 
 Upon receiving the request, the Drumee kernel parses the couple module/method. If the module exists, it checks the request privilege against the method permission requirement.  
 It’s a bitwise operation, like the POSIX one. 
 
-If the privilege doesn’t match the requirement, the request is rejected and the method never executed.
+If the privilege doesn’t match the requirement, the request is rejected and the method never executed. [Checkout this link for more details](https://github.com/drumee/sdk/wiki/Access-Control-List)
 
 So far, from the frontend request **this.postService("perdrix.site_create",…)**, we reach the module named perdrix and the method site_create as below. [Check full implentation here.](https://github.com/somanos/perdrix-server/blob/main/service/index.js)
 
