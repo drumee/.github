@@ -336,5 +336,6 @@ Drumee best practice to always access database through stored procedures.
 • By using stored procedure, arguments must be declared inside the procedure
 Therefore, any ill formed variables shall end up rejected.
 
-
 This is a very tiny glimpse of Drumee potential. Imagine you have to handle files management. Not just some simple images, but any type of file, with tree structure, with the same operation you can do with a normal filesystem (upload, download, rename, remove, update, delete, move, copy…) all applicable on files as well as folders, recursively by just sending postService(‘media.copy’…).
+
+[Discover Server Routing Rules](https://github.com/drumee/sdk/wiki)
