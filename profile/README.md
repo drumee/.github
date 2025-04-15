@@ -46,6 +46,29 @@ Drumee Ecosystem is built upon two assets
       - Enterprises audit/verify code via smart contracts
       - Example: Purchase a "biometric-auth" plugin with crypto
 
+# Get started
+We are building up documentation to help developers to better figure out Drumee paradigm. Feel free to contribute.
+
+## Developers corner
+Head to this Wiki pages: 
+- [if you want to contribute to Drumee OS](https://github.com/drumee/documentation/wiki/Developer-Corner)
+- if you want to create plugins for Drumee (The how-to is being written)
+
+[Check out all Drumee projects](https://github.com/orgs/drumee/repositories?) 
+
+## Use only Drumee Team functionalities
+
+Beyond its Web OS features, Drumee is also a standaone collaborative system with a wide range of features integrated into a single, seamless environment. You can use it for free functionalities such as :
+- Files sharing
+- Live messaging
+- Video conferencing
+- ...
+Chose one of installation mode below and enjoy!
+#### Install using Docker compose file 
+The easiest way to use Drumee is to follow [the installation documentation here](https://github.com/drumee/docker-compose)
+#### Install using Debian Packages 
+If you prefere to install on a Bare Metal Server or Virtual Machine, please [head to this manual](https://github.com/drumee/docker-compose)
+
 
 # General Principles
 ## Technical Architecture
@@ -315,29 +338,3 @@ Therefore, any ill formed variables shall end up rejected.
 
 
 This is a very tiny glimpse of Drumee potential. Imagine you have to handle files management. Not just some simple images, but any type of file, with tree structure, with the same operation you can do with a normal filesystem (upload, download, rename, remove, update, delete, move, copy…) all applicable on files as well as folders, recursively by just sending postService(‘media.copy’…).
-
-
-
-# Get started
-While Drumee User Interface, the client-side, can run on any moderne Web Browser, Drumee Server supports only Linux architecture, at the present time.
-
-## Developers corner
-Head to this Wiki page: 
-- (if you want to contribute to Drumee OS)[https://github.com/drumee/documentation/wiki/Developer-Corner]
-- if you want to create plugins for Drumee (Instructions are being written)
-
-[Check out all Drumee projects](https://github.com/orgs/drumee/repositories?) 
-
-## Use only Drumee core functionalities
-
-Beyond its Web OS features, Drumee is also a standaone collaborative system with a wide range of features integrated into a single, seamless environment. You can use it for free functionalities such as :
-- Files sharing
-- Live messaging
-- Video conferencing
-- ...
-Chose one of installation mode below and enjoy!
-#### Install using Docker compose file 
-The easiest way to use Drumee is to follow [the installation documentation here](https://github.com/drumee/docker-compose)
-#### Install using Debian Packages 
-If you prefere to install on a Bare Metal Server or Virtual Machine, please [head to this manual](https://github.com/drumee/docker-compose)
-
