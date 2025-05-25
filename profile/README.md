@@ -1,6 +1,6 @@
 # What is Drumee
 
-To the elders who still remember. To the youngs who never knew. Back to the 80-90's, there were VMS and Unix for expensive machines... and DOS for the cheapest. Can you imagine writing a program witout an Operating System? Yet, this what we are all doing now, in the 21th century, when developing a Web Application.
+To the elders who still remember. To the youngs who never knew. Back to the 80-90's, there were VMS and Unix for expensive machines... and DOS for the cheapest. Can you imagine writing a program witout an Operating System? Yet, this what we are all doing now, in the 21th century, when developing a Web Application. Drumee is a Virtuall Operating System designed to help Web Application Developers to build their projects faster, more secure, easier to deploy. Just like a conventional OS for computers/servers programs.
 
 Drumee has been built to end this era of Wild Web Workaround. Open source with the AGPL licence, it's a kind of Operating System for Web Application development.
 
