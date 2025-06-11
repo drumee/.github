@@ -67,8 +67,7 @@ Chose one of installation mode below and enjoy!
 #### Install using Docker compose file 
 The easiest way to use Drumee is to follow [the installation documentation here](https://github.com/drumee/docker-compose)
 #### Install using Debian Packages 
-If you prefere to install on a Bare Metal Server or Virtual Machine, please [head to this manual](https://github.com/drumee/docker-compose)
-
+To install on Bare Metal Server follow [the installation documentation here](https://github.com/drumee/debian-hosted) 
 
 # General Principles
 ## Technical Architecture
