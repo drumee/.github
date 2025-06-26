@@ -133,7 +133,7 @@ export {
 ```
 
 ### A Frontend Widget
-Let focused on the widget **work_form**. [Check full implentation here.](https://github.com/somanos/perdrix-ui/tree/main/src/manager/widget/work/form)
+Let focused on the widget **work_form**. [Check full implentation here.](https://github.com/somanos/perdrix-ui/tree/main/src/manager/widget/mission/form)
 
 ```
   promptSite(cmd) {
