@@ -36,15 +36,13 @@ Drumee provides three integrated pillars that work like an OS:
 Drumee Ecosystem is built upon two assets
 
   - Unified SDK :
-      - Prebuilt, resable and extensible widgets (drag-drop UI)
+      - Prebuilt, reusable and extensible widgets (JSON-based)
       - Namespaced styling (no CSS collisions)
-      - Direct filesystem API integration
+      - Builtin filesystem API integration
       - Micro-services API integration with customizable access rule for each
-      - 
-  - Blockchain Plugins Marketplace (Coming soon)
-      - Developers sell/monetize Drumee plugins
-      - Enterprises audit/verify code via smart contracts
-      - Example: Purchase a "biometric-auth" plugin with crypto
+      - Database API for painless integration and flexibility
+  - Pure Javascript engone
+Any Plain JS can be easy integrated into Drumee Rendering engine and interact with the whole SDK, such as filesystem access or Window Manger.
 
 # Get started
 We are building up documentation to help developers to better figure out Drumee paradigm. Feel free to contribute.
