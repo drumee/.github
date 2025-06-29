@@ -41,8 +41,8 @@ Drumee Ecosystem is built upon two assets
       - Builtin filesystem API integration
       - Micro-services API integration with customizable access rule for each
       - Database API for painless integration and flexibility
-  - Pure Javascript engone
-Any Plain JS can be easy integrated into Drumee Rendering engine and interact with the whole SDK, such as filesystem access or Window Manger.
+  - Pure Javascript engine
+    - Easy integration, any plain JS module can be integrated into Drumee Rendering engine and interact with the whole SDK, such as filesystem access or Window Manger.
 
 # Get started
 We are building up documentation to help developers to better figure out Drumee paradigm. Feel free to contribute.
