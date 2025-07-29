@@ -54,13 +54,16 @@ We are building up documentation to help developers to better figure out Drumee 
 
 ## Use only Drumee Team functionalities
 
+[See live demo here](https://sandbox.drumee.com). Best with larger screen
+
 Beyond its Web OS features, Drumee is also a standaone collaborative system with a wide range of features integrated into a single, seamless environment. You can use it for free functionalities such as :
 - Files sharing
 - Live messaging
 - Video conferencing
 - ...
 
-[See live demo here](https://sandbox.drumee.com). Best with larger screen
+Chose one of installation mode below and enjoy!
+
 #### Install using Docker compose file 
 The easiest way to use Drumee is to follow [the installation documentation here](https://github.com/drumee/docker-compose)
 #### Install using Debian Packages 
