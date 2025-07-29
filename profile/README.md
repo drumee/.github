@@ -48,9 +48,7 @@ Drumee Ecosystem is built upon two assets
 We are building up documentation to help developers to better figure out Drumee paradigm. Feel free to contribute.
 
 ## Developers corner
-Head to this Wiki pages: 
-- [if you want to contribute to Drumee OS](https://github.com/drumee/documentation/wiki/Developer-Corner)
-- if you want to create plugins for Drumee (The how-to is being written)
+[Try our Starter Kit, the easiest way to dive into Drumee OS](https://github.com/drumee/starter-kit)
 
 [Check out all Drumee projects](https://github.com/orgs/drumee/repositories?) 
 
