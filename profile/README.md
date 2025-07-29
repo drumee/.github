@@ -26,7 +26,7 @@ Drumee provides three integrated pillars that work like an OS:
     - Atomic API for uploads/downloads/move/delete/copy/update (no more multer hacks)
     - Prevents: Directory traversal, permission leaks
   
-3. LETC Engine (JSON UI)
+3. LETC Engine (JSON UI) [See live demo here](https://drumee.com/-/#/sandbox). Best with larger screen
     - Zero HTML processing on the server-side
     - Define UIs as JSON trees (no HTML/CSS fragmentation)
     - Extend with custom widgets (e.g., "kind": "data-grid")
@@ -59,7 +59,8 @@ Beyond its Web OS features, Drumee is also a standaone collaborative system with
 - Live messaging
 - Video conferencing
 - ...
-Chose one of installation mode below and enjoy!
+
+[See live demo here](https://sandbox.drumee.com). Best with larger screen
 #### Install using Docker compose file 
 The easiest way to use Drumee is to follow [the installation documentation here](https://github.com/drumee/docker-compose)
 #### Install using Debian Packages 
