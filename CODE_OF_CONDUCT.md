@@ -1,13 +1,10 @@
-
----
-
 # Drumee Community Code of Conduct
 
 ## Our Pledge
 
 We, as members, contributors, and leaders of the Drumee community, pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.
 
-We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. Our goal is to share the universal language of rhythm in a positive and supportive environment.
+We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. Our goal is to build software people can genuinely own, in a positive and supportive environment.
 
 ## Our Standards
 
@@ -25,8 +22,8 @@ Examples of unacceptable behavior by participants include:
 *   The use of sexualized language or imagery, and sexual attention or advances of any kind.
 *   Trolling, insulting or derogatory comments, and personal or political attacks.
 *   Public or private harassment. This includes unwelcome comments regarding a person’s lifestyle, choices, or practices.
-*   Publishing others' private information, such as a physical or email address, without their explicit permission. This is especially important—do not share video/audio of others without consent.
-*   Dismissive or disrespectful comments about someone's skill level, gear, musical taste, or genre preferences. (e.g., "Acoustic is real drums," "That genre is easy," etc.)
+*   Publishing others' private information, such as a physical or email address, without their explicit permission. This is especially important — do not share screenshots, recordings or logs containing other people's data without consent.
+*   Dismissive or disrespectful comments about someone's skill level, choice of tools, language or platform. (e.g., "anyone competent would know this," "that stack is a toy," etc.)
 *   Spamming, including repeated self-promotion without contributing to other discussions.
 *   Any other conduct which could reasonably be considered inappropriate in a professional community setting.
 
