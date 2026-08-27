@@ -9,13 +9,13 @@ self-hosted on infrastructure **you** control, under AGPL-3.0.
 
 [Website](https://drumee.com) ·
 [Documentation](https://docs.drumee.com/introduction/) ·
-[Self-host with Docker](https://github.com/drumee/docker-hosted) ·
+[Self-host](https://github.com/drumee/debian) ·
 [Discussions](https://github.com/orgs/drumee/discussions) ·
 [X](https://x.com/drumeeOS)
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Docker Pulls](https://img.shields.io/docker/pulls/drumee/stable)](https://hub.docker.com/r/drumee/stable)
-[![Self-hosted](https://img.shields.io/badge/self--hosted-yes-success)](https://github.com/drumee/docker-hosted)
+[![Self-hosted](https://img.shields.io/badge/self--hosted-yes-success)](https://github.com/drumee/debian)
 
 </div>
 
@@ -32,12 +32,19 @@ Synology NAS.
 
 ## Get started
 
+```bash
+# Docker Compose
+curl -fsSL https://get.drumee.com/install | bash
+
+# Debian / Ubuntu packages
+curl -fsSL https://get.drumee.com/native | sudo bash
+```
+
 | Path | Best for | Start here |
 |---|---|---|
-| **Docker** | Most self-hosters | [drumee/docker-hosted](https://github.com/drumee/docker-hosted) |
-| **Debian / bare metal** | Production installs | [drumee/debian-hosted](https://github.com/drumee/debian-hosted) |
+| **Container or Debian packages** | Self-hosting and production | [drumee/debian](https://github.com/drumee/debian) |
 | **Synology NAS** | Home and small-office NAS | [drumee/synology-hosted](https://github.com/drumee/synology-hosted) |
-| **Build on Drumee** | Developers extending the platform | [drumee/starter-kit](https://github.com/drumee/starter-kit) |
+| **Local development** | Building on or contributing to Drumee | [`scripts/dev-up.sh`](https://github.com/drumee/debian/blob/main/docs/quickstart.md) |
 
 Full documentation: **[docs.drumee.com](https://docs.drumee.com/introduction/)**
 
@@ -65,9 +72,11 @@ layer, a permissioned virtual filesystem, and a client-side JSON rendering engin
 — so an app built on Drumee ships without rebuilding auth, storage or a UI
 framework from scratch.
 
-The [Starter Kit](https://github.com/drumee/starter-kit) is the fastest way in:
-it brings up a full local Drumee with Docker and lets you edit the back-end and
-front-end sources in place.
+The fastest way in is the container stack in
+[drumee/debian](https://github.com/drumee/debian): `scripts/dev-up.sh` renders the
+config and brings up a full local Drumee, and the component sources can be
+checked out alongside it and edited in place. See its
+[quickstart](https://github.com/drumee/debian/blob/main/docs/quickstart.md).
 
 ## Community
 
