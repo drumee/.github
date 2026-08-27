@@ -9,13 +9,13 @@ self-hosted on infrastructure **you** control, under AGPL-3.0.
 
 [Website](https://drumee.com) ·
 [Documentation](https://docs.drumee.com/introduction/) ·
-[Self-host](https://github.com/drumee/debian) ·
+[Self-host](https://docs.drumee.com/self-hosting/overview) ·
 [Discussions](https://github.com/orgs/drumee/discussions) ·
 [X](https://x.com/drumeeOS)
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Docker Pulls](https://img.shields.io/docker/pulls/drumee/stable)](https://hub.docker.com/r/drumee/stable)
-[![Self-hosted](https://img.shields.io/badge/self--hosted-yes-success)](https://github.com/drumee/debian)
+[![Self-hosted](https://img.shields.io/badge/self--hosted-yes-success)](https://docs.drumee.com/self-hosting/overview)
 
 </div>
 
@@ -40,11 +40,14 @@ curl -fsSL https://get.drumee.com/install | bash
 curl -fsSL https://get.drumee.com/native | sudo bash
 ```
 
-| Path | Best for | Start here |
-|---|---|---|
-| **Container or Debian packages** | Self-hosting and production | [drumee/debian](https://github.com/drumee/debian) |
-| **Synology NAS** | Home and small-office NAS | [drumee/synology-hosted](https://github.com/drumee/synology-hosted) |
-| **Local development** | Building on or contributing to Drumee | [`scripts/dev-up.sh`](https://github.com/drumee/debian/blob/main/docs/quickstart.md) |
+| Guide | What it covers |
+|---|---|
+| [Self-hosting overview](https://docs.drumee.com/self-hosting/overview) | Start here — which path suits you |
+| [Docker Compose](https://docs.drumee.com/self-hosting/docker-compose) | The container stack |
+| [Debian / Ubuntu packages](https://docs.drumee.com/self-hosting/debian) | Native install on a dedicated host |
+| [Production & operations](https://docs.drumee.com/self-hosting/operations) | Domain, TLS, mail, backup, upgrade |
+| [Architecture](https://docs.drumee.com/self-hosting/architecture) | How the pieces fit together |
+| [Synology NAS](https://github.com/drumee/synology-hosted) | Home and small-office NAS |
 
 Full documentation: **[docs.drumee.com](https://docs.drumee.com/introduction/)**
 
@@ -72,11 +75,10 @@ layer, a permissioned virtual filesystem, and a client-side JSON rendering engin
 — so an app built on Drumee ships without rebuilding auth, storage or a UI
 framework from scratch.
 
-The fastest way in is the container stack in
-[drumee/debian](https://github.com/drumee/debian): `scripts/dev-up.sh` renders the
-config and brings up a full local Drumee, and the component sources can be
-checked out alongside it and edited in place. See its
-[quickstart](https://github.com/drumee/debian/blob/main/docs/quickstart.md).
+Start from the [getting-started guides](https://docs.drumee.com/getting-started)
+and the [plugin documentation](https://docs.drumee.com/self-hosting/plugins).
+The build and deployment source lives in
+[drumee/debian](https://github.com/drumee/debian).
 
 ## Community
 
